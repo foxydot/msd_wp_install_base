@@ -80,9 +80,9 @@ function wp_install( $blog_title, $user_name, $user_email, $public, $deprecated 
 	$user = new WP_User($user_id);
 	$user->set_role('administrator');
 
-	wp_install_defaults($user_id, $dealer_info);
+	wp_install_defaults($user_id);
 
-	$wp_rewrite->flush_rules();
+    flush_rewrite_rules();
 
 	wp_new_blog_notification($blog_title, $guessurl, $user_id, ($email_password ? $user_password : __('The password you chose during the install.') ) );
 
@@ -100,10 +100,9 @@ function wp_install( $blog_title, $user_name, $user_email, $public, $deprecated 
  *
  * @param int $user_id User ID.
  */
-function wp_install_defaults($user_id, $dealer_info) {
+function wp_install_defaults($user_id) {
 	global $wpdb, $wp_rewrite, $current_site, $table_prefix;
-	// Get the dealer info
-	extract($dealer_info);
+    
 	// Default category
 	$cat_name = __('News');
 	/* translators: Default category slug */
@@ -123,39 +122,6 @@ function wp_install_defaults($user_id, $dealer_info) {
 	$wpdb->insert( $wpdb->terms, array('term_id' => $cat_id, 'name' => $cat_name, 'slug' => $cat_slug, 'term_group' => 0) );
 	$wpdb->insert( $wpdb->term_taxonomy, array('term_id' => $cat_id, 'taxonomy' => 'category', 'description' => '', 'parent' => 0, 'count' => 1));
 	$cat_tt_id = $wpdb->insert_id;
-
-	// Default link category
-	$cat_name = __('Links');
-	/* translators: Default link category slug */
-	$cat_slug = sanitize_title(_x('links', 'Default link category slug'));
-
-	if ( global_terms_enabled() ) {
-		$blogroll_id = $wpdb->get_var( $wpdb->prepare( "SELECT cat_ID FROM {$wpdb->sitecategories} WHERE category_nicename = %s", $cat_slug ) );
-		if ( $blogroll_id == null ) {
-			$wpdb->insert( $wpdb->sitecategories, array('cat_ID' => 0, 'cat_name' => $cat_name, 'category_nicename' => $cat_slug, 'last_updated' => current_time('mysql', true)) );
-			$blogroll_id = $wpdb->insert_id;
-		}
-		update_option('default_link_category', $blogroll_id);
-	} else {
-		$blogroll_id = 2;
-	}
-
-	$wpdb->insert( $wpdb->terms, array('term_id' => $blogroll_id, 'name' => $cat_name, 'slug' => $cat_slug, 'term_group' => 0) );
-	$wpdb->insert( $wpdb->term_taxonomy, array('term_id' => $blogroll_id, 'taxonomy' => 'link_category', 'description' => '', 'parent' => 0, 'count' => 1));
-	$blogroll_tt_id = $wpdb->insert_id;
-
-	// Now drop in some default links
-	$default_links = array();
-	$default_links[] = array(	'link_url' => 'http://madsciencedept.com/',
-								'link_name' => 'Mad Science Department',
-								'link_rss' => '',
-								'link_notes' => 'Custom web application design and development');
-
-	foreach ( $default_links as $link ) {
-		$wpdb->insert( $wpdb->links, $link);
-		$wpdb->insert( $wpdb->term_relationships, array('term_taxonomy_id' => $blogroll_tt_id, 'object_id' => $wpdb->insert_id) );
-	}
-
 	
 	$now = date('Y-m-d H:i:s');
 	$now_gmt = gmdate('Y-m-d H:i:s');
@@ -183,47 +149,14 @@ function wp_install_defaults($user_id, $dealer_info) {
 	
 	
 	$cat_tt_id = 1;
-	// First post
-	$first_post_guid = get_option('home') . '/?p=2';
-
-	if ( is_multisite() ) {
-		$first_post = get_site_option( 'first_post' );
-
-		if ( empty($first_post) )
-			$first_post = __('This is your first post.');
-		} else {
-			$first_post = stripslashes( __( '' ) );
-					
-	}
-
-	$wpdb->insert( $wpdb->posts, array(
-								'post_author' => $user_id,
-								'post_date' => $now,
-								'post_date_gmt' => $now_gmt,
-								'post_content' => $first_post,
-								'post_excerpt' => '',
-								'post_title' => __('Welcome to the new site'),
-								'post_name' => sanitize_title( _x('welcome', 'Default post slug') ),
-								'comment_status' => 'closed',
-								'post_modified' => $now,
-								'post_modified_gmt' => $now_gmt,
-								'guid' => $first_post_guid,
-								'comment_count' => 0,
-								'to_ping' => '',
-								'pinged' => '',
-								'post_content_filtered' => ''
-								));
-	$wpdb->insert( $wpdb->term_relationships, array('term_taxonomy_id' => $cat_tt_id, 'object_id' => 2) );	
-	
-	
 	
 	//add menu items
 	
-	$wpdb->insert( $wpdb->terms, array('term_id' => 3, 'name' => 'Primary Links', 'slug' => 'primary-links', 'term_group' => 0) );
-	$wpdb->insert( $wpdb->term_taxonomy, array('term_id' => 3, 'taxonomy' => 'nav_menu', 'description' => '', 'parent' => 0, 'count' => 6));
+	$wpdb->insert( $wpdb->terms, array('term_id' => 2, 'name' => 'Primary Links', 'slug' => 'primary-links', 'term_group' => 0) );
+	$wpdb->insert( $wpdb->term_taxonomy, array('term_id' => 2, 'taxonomy' => 'nav_menu', 'description' => '', 'parent' => 0, 'count' => 6));
 	
 	//Menuitem1
-	$this_post_guid = get_option('home') . '/?p=3';
+	$this_post_guid = get_option('home') . '/?p=2';
 
 	if ( is_multisite() ) {
 		$this_post = get_site_option( 'this_post' );
@@ -241,7 +174,7 @@ function wp_install_defaults($user_id, $dealer_info) {
 								'post_content' => '',
 								'post_excerpt' => '',
 								'post_title' => __(''),
-								'post_name' => sanitize_title( _x('3', 'Default post slug') ),
+								'post_name' => sanitize_title( _x('2', 'Default post slug') ),
 								'post_modified' => $now,
 								'post_modified_gmt' => $now_gmt,
 								'guid' => $this_post_guid,
@@ -254,16 +187,16 @@ function wp_install_defaults($user_id, $dealer_info) {
 								'pinged' => '',
 								'post_content_filtered' => ''
 								));
-	$wpdb->insert( $wpdb->postmeta, array( 'post_id' => 3, 'meta_key' => '_menu_item_type', 'meta_value' => 'post_type' ) );	
-	$wpdb->insert( $wpdb->postmeta, array( 'post_id' => 3, 'meta_key' => '_menu_item_menu_item_parent', 'meta_value' => '0' ) );	
-	$wpdb->insert( $wpdb->postmeta, array( 'post_id' => 3, 'meta_key' => '_menu_item_object_id', 'meta_value' => '1' ) );	
-	$wpdb->insert( $wpdb->postmeta, array( 'post_id' => 3, 'meta_key' => '_menu_item_object', 'meta_value' => 'page' ) );	
-	$wpdb->insert( $wpdb->postmeta, array( 'post_id' => 3, 'meta_key' => '_menu_item_target', 'meta_value' => '' ) );	
-	$wpdb->insert( $wpdb->postmeta, array( 'post_id' => 3, 'meta_key' => '_menu_item_classes', 'meta_value' => 'a:1:{i:0;s:0:"";}' ) );
-	$wpdb->insert( $wpdb->postmeta, array( 'post_id' => 3, 'meta_key' => '_menu_item_xfn', 'meta_value' => '' ) );	
-	$wpdb->insert( $wpdb->postmeta, array( 'post_id' => 3, 'meta_key' => '_menu_item_url', 'meta_value' => '' ) );	
+	$wpdb->insert( $wpdb->postmeta, array( 'post_id' => 2, 'meta_key' => '_menu_item_type', 'meta_value' => 'post_type' ) );	
+	$wpdb->insert( $wpdb->postmeta, array( 'post_id' => 2, 'meta_key' => '_menu_item_menu_item_parent', 'meta_value' => '0' ) );	
+	$wpdb->insert( $wpdb->postmeta, array( 'post_id' => 2, 'meta_key' => '_menu_item_object_id', 'meta_value' => '1' ) );	
+	$wpdb->insert( $wpdb->postmeta, array( 'post_id' => 2, 'meta_key' => '_menu_item_object', 'meta_value' => 'page' ) );	
+	$wpdb->insert( $wpdb->postmeta, array( 'post_id' => 2, 'meta_key' => '_menu_item_target', 'meta_value' => '' ) );	
+	$wpdb->insert( $wpdb->postmeta, array( 'post_id' => 2, 'meta_key' => '_menu_item_classes', 'meta_value' => 'a:1:{i:0;s:0:"";}' ) );
+	$wpdb->insert( $wpdb->postmeta, array( 'post_id' => 2, 'meta_key' => '_menu_item_xfn', 'meta_value' => '' ) );	
+	$wpdb->insert( $wpdb->postmeta, array( 'post_id' => 2, 'meta_key' => '_menu_item_url', 'meta_value' => '' ) );	
 			
-		$wpdb->insert( $wpdb->term_relationships, array('term_taxonomy_id' => 3, 'object_id' => 3) );	
+		$wpdb->insert( $wpdb->term_relationships, array('term_taxonomy_id' => 2, 'object_id' => 2) );	
 	
 	//Make sure the permalinks will work
 	$home_path = get_home_path();
@@ -273,7 +206,12 @@ function wp_install_defaults($user_id, $dealer_info) {
 	$wp_rewrite->set_permalink_structure( $permalink_structure );
 		
 	$wp_rewrite->flush_rules();
-	
+    
+    if ( ! is_multisite() )
+        update_user_meta( $user_id, 'show_welcome_panel', 1 );
+    elseif ( ! is_super_admin( $user_id ) && ! metadata_exists( 'user', $user_id, 'show_welcome_panel' ) )
+        update_user_meta( $user_id, 'show_welcome_panel', 2 );	
+    
 	if ( is_multisite() ) {
 		// Flush rules to pick up the new page.
 		$wp_rewrite->init();
