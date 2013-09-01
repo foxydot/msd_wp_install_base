@@ -1,4 +1,9 @@
 <?php
+/*** GENERAL ***/
+add_theme_support( 'html5' );//* Add HTML5 markup structure
+add_theme_support( 'genesis-responsive-viewport' );//* Add viewport meta tag for mobile browsers
+add_theme_support( 'custom-background' );//* Add support for custom background
+
 /*** HEADER ***/
 add_filter( 'genesis_search_text', 'msdlab_custom_search_text' ); //customizes the serach bar placeholder
 /*** NAV ***/
