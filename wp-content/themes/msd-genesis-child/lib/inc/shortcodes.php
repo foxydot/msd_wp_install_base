@@ -1,6 +1,6 @@
 <?php
-add_shortcode('button','msd_child_button_function');
-function msd_child_button_function($atts, $content = null){	
+add_shortcode('button','msdlab_button_function');
+function msdlab_button_function($atts, $content = null){	
 	extract( shortcode_atts( array(
       'url' => null,
 	  'target' => '_self'
@@ -10,13 +10,13 @@ function msd_child_button_function($atts, $content = null){
 </div>';
 	return $ret;
 }
-add_shortcode('hero','msd_child_landing_page_hero');
-function msd_child_landing_page_hero($atts, $content = null){
+add_shortcode('hero','msdlab_landing_page_hero');
+function msdlab_landing_page_hero($atts, $content = null){
 	$ret = '<div class="hero">'.remove_wpautop($content).'</div>';
 	return $ret;
 }
-add_shortcode('callout','msd_child_landing_page_callout');
-function msd_child_landing_page_callout($atts, $content = null){
+add_shortcode('callout','msdlab_landing_page_callout');
+function msdlab_landing_page_callout($atts, $content = null){
 	$ret = '<div class="callout">'.remove_wpautop($content).'</div>';
 	return $ret;
 }

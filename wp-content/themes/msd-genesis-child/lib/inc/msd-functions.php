@@ -132,9 +132,6 @@ if(!function_exists('is_cpt')){
 	}
 }
 
-//shortcodes in widgets
-add_filter('widget_text', 'do_shortcode');
-
 function remove_wpautop( $content ) { 
     $content = do_shortcode( shortcode_unautop( $content ) ); 
     $content = preg_replace( '#^<\/p>|^<br \/>|<p>$#', '', $content );
