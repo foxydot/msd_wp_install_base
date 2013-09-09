@@ -2,14 +2,14 @@
 /*
  * Add styles and scripts
 */
-add_action('wp_print_styles', 'msdlab_add_styles');
-add_action('wp_print_scripts', 'msdlab_add_scripts');
+add_action('wp_enqueue_scripts', 'msdlab_add_styles');
+add_action('wp_enqueue_scripts', 'msdlab_add_scripts');
 
 function msdlab_add_styles() {
     global $is_IE;
     if(!is_admin()){
         //use cdn        
-            wp_enqueue_style('bootstrap-style','<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css');
+            wp_enqueue_style('bootstrap-style','//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css');
             wp_enqueue_style('font-awesome-style','//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css',array('bootstrap-style'));
         //use local
             //wp_enqueue_style('bootstrap-style',get_stylesheet_directory_uri().'/lib/bootstrap/css/bootstrap.css');

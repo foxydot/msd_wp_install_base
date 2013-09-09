@@ -1,4 +1,5 @@
-@import 'elements';
+@import '../bootstrap/less/bootstrap.less';
+@import 'lesshat';
 /* Import Fonts
 ------------------------------------------------------------ */
 
@@ -54,7 +55,7 @@
 /* Buttons */
 .button(@color:@red) {
 	.gradient(@color,darken(@color,20%),lighten(@color,20%));
-	.rounded(5px);
+	.border-radius(5px);
 	border: .5px solid darken(@color,20%);
 	.drop-shadow(0, 0, 2px, 0.2);
 	padding: 6px 24px;
@@ -106,84 +107,6 @@
 	height: 25px;
 	width: 25px;
 	cursor: pointer;
-}
-
-
-/* Column Classes
------------------------------------------------------------- */
-
-.five-sixths,
-.four-fifths,
-.four-sixths,
-.one-fifth,
-.one-fourth,
-.one-half,
-.one-sixth,
-.one-third,
-.three-fifths,
-.three-fourths,
-.three-sixths,
-.two-fifths,
-.two-fourths,
-.two-sixths,
-.two-thirds {
-	float: left;
-	margin: 0 0 20px;
-	padding-left: 3%;
-}
-
-.one-half,
-.three-sixths,
-.two-fourths {
-	width: 48%;
-}
-
-.one-third,
-.two-sixths {
-	width: 31%;
-}
-
-.four-sixths,
-.two-thirds {
-	width: 65%;
-}
-
-.one-fourth {
-	width: 22.5%;
-}
-
-.three-fourths {
-	width: 73.5%;
-}
-
-.one-fifth {
-	width: 17.4%;
-}
-
-.two-fifths {
-	width: 37.8%;
-}
-
-.three-fifths {
-	width: 58.2%;
-}
-
-.four-fifths {
-	width: 78.6%;
-}
-
-.one-sixth {
-	width: 14%;
-}
-
-.five-sixths {
-	width: 82%;
-}
-
-.first {
-	clear: both;
-	margin-left: 0;
-	padding-left: 0;
 }
 
 /* Clears */
