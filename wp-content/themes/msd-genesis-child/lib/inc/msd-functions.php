@@ -121,6 +121,29 @@ function msd_allow_all_embeds(){
 	);
 }
 
+/* ---------------------------------------------------------------------- */
+/* Check the current post for the existence of a short code
+/* ---------------------------------------------------------------------- */
+
+if ( !function_exists('msdlab_has_shortcode') ) {
+
+    function msdlab_has_shortcode($shortcode = '') {
+    
+        global $post;
+        $post_obj = get_post( $post->ID );
+        $found = false;
+        
+        if ( !$shortcode )
+            return $found;
+        if ( stripos( $post_obj->post_content, '[' . $shortcode ) !== false )
+            $found = true;
+        
+        // return our results
+        return $found;
+    
+    }
+}
+
 /**
  * Check if a post is a particular post type.
  */
