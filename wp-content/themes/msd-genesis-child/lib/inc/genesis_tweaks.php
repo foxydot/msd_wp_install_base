@@ -7,6 +7,12 @@ add_theme_support( 'custom-background' );//* Add support for custom background
 /*** HEADER ***/
 add_filter( 'genesis_search_text', 'msdlab_custom_search_text' ); //customizes the serach bar placeholder
 /*** NAV ***/
+/**
+ * Move nav into header
+ */
+remove_action( 'genesis_after_header', 'genesis_do_nav' );
+add_action( 'genesis_header', 'genesis_do_nav' );
+
 /*** SIDEBARS ***/
 add_action('genesis_before', 'msdlab_ro_layout_logic'); //This ensures that the primary sidebar is always to the left.
 add_filter('widget_text', 'do_shortcode');//shortcodes in widgets
