@@ -2,7 +2,7 @@
 /*
 Plugin Name: MSD Site Settings
 Description: Provides settings panel for several social/address options and widgets/shortcodes/functions for display.
-Version: 0.1
+Version: 0.2
 Author: Catherine M OBrien Sandrick (CMOS)
 Author URI: http://msdlab.com/biological-assets/catherine-obrien-sandrick/
 License: GPL v2
@@ -13,17 +13,16 @@ class MSDSocial{
 	private $the_path;
 	private $the_url;
 	public $icon_size;
-	
 	function MSDSocial(){
 		$this->the_path = plugin_dir_path(__FILE__);
 		$this->the_url = plugin_dir_url(__FILE__);
-		$this->icon_size = get_option('msdsocial_icon_size')?get_option('msdsocial_icon_size'):'24';
+		$this->icon_size = get_option('msdsocial_icon_size')?get_option('msdsocial_icon_size'):'0';
 		/*
 		 * Pull in some stuff from other files
 		 */
 		$this->requireDir($this->the_path . '/inc');
-		//wp_enqueue_style('msd-social-style',$this->the_url.'css/style.css');
-		//wp_enqueue_style('msd-social-style-'.$this->icon_size,$this->the_url.'css/style'.$this->icon_size.'.css');
+		wp_enqueue_style('msd-social-style',$this->the_url.'css/style.css');
+		wp_enqueue_style('msd-social-style-'.$this->icon_size,$this->the_url.'css/style'.$this->icon_size.'.css');
 		add_shortcode('msd-address',array(&$this,'get_address'));
 		add_shortcode('msd-bizname',array(&$this,'get_bizname'));
 		add_shortcode('msd-copyright',array(&$this,'get_copyright'));
