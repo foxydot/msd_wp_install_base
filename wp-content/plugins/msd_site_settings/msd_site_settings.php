@@ -21,14 +21,39 @@ class MSDSocial{
 		 * Pull in some stuff from other files
 		 */
 		$this->requireDir($this->the_path . '/inc');
-		wp_enqueue_style('msd-social-style',$this->the_url.'css/style.css');
-		wp_enqueue_style('msd-social-style-'.$this->icon_size,$this->the_url.'css/style'.$this->icon_size.'.css');
+        if(!is_admin){
+    		wp_enqueue_style('msd-social-style',$this->the_url.'css/style.css');
+    		wp_enqueue_style('msd-social-style-'.$this->icon_size,$this->the_url.'css/style'.$this->icon_size.'.css');
+        }
+        add_action('admin_enqueue_scripts', array(&$this,'add_admin_scripts') );
+        add_action('admin_enqueue_scripts', array(&$this,'add_admin_styles') );
+        
 		add_shortcode('msd-address',array(&$this,'get_address'));
 		add_shortcode('msd-bizname',array(&$this,'get_bizname'));
 		add_shortcode('msd-copyright',array(&$this,'get_copyright'));
 		add_shortcode('msd-digits',array(&$this,'get_digits'));
 		add_shortcode('msd-social',array(&$this,'social_media'));
 	}
+
+        function add_admin_scripts() {
+            global $current_screen;
+            if($current_screen->id == 'settings_page_msdsocial-options'){
+                wp_enqueue_script('bootstrap-jquery','//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js',array('jquery'));
+                wp_enqueue_script('timepicker-jquery',$this->the_url.'js/bootstrap-timepicker.min.js',array('jquery','bootstrap-jquery'));
+            }
+        }
+        
+        function add_admin_styles() {
+            global $current_screen;
+            if($current_screen->id == 'settings_page_msdsocial-options'){
+                wp_register_style('bootstrap-style','//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css');
+                wp_register_style('font-awesome-style','//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css',array('bootstrap-style'));
+                wp_register_style('timepicker-style',$this->the_url.'css/bootstrap-timepicker.min.css');
+                wp_enqueue_style('font-awesome-style');
+                wp_enqueue_style('timepicker-style');
+            }
+        }  
+
 
 //contact information
 function get_bizname(){
