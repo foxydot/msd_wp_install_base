@@ -7,7 +7,6 @@ Author: Catherine M OBrien Sandrick (CMOS)
 Author URI: http://msdlab.com/biological-assets/catherine-obrien-sandrick/
 License: GPL v2
 */
-define('MSD_ALT_API','http://msdlab.com/plugin-api/');
 
 class MSDSocial{
 	private $the_path;
@@ -21,9 +20,10 @@ class MSDSocial{
 		 * Pull in some stuff from other files
 		 */
 		$this->requireDir($this->the_path . '/inc');
-        if(!is_admin){
+        if(!is_admin()){
     		wp_enqueue_style('msd-social-style',$this->the_url.'css/style.css');
     		wp_enqueue_style('msd-social-style-'.$this->icon_size,$this->the_url.'css/style'.$this->icon_size.'.css');
+            wp_enqueue_style('font-awesome-style','//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css');
         }
         add_action('admin_enqueue_scripts', array(&$this,'add_admin_scripts') );
         add_action('admin_enqueue_scripts', array(&$this,'add_admin_styles') );
@@ -223,55 +223,55 @@ function copyright($address = TRUE){
 function social_media($atts = array()){
     extract( shortcode_atts( array(
             ), $atts ) );
-    ?>
-    <div id="social-media" class="social-media">
-    <?php if(get_option('msdsocial_facebook_link')!=""){ ?>
-        <a href="<?php echo get_option('msdsocial_facebook_link'); ?>" class="fb fa fa-facebook" title="Join Us on Facebook!" target="_blank"></a>
-    <?php }?>
-    <?php if(get_option('msdsocial_twitter_user')!=""){ ?>
-        <a href="http://www.twitter.com/<?php echo get_option('msdsocial_twitter_user'); ?>" class="tw fa fa-twitter" title="Follow Us on Twitter!" target="_blank"></a>
-    <?php }?>
-    <?php if(get_option('msdsocial_pinterest_link')!=""){ ?>
-        <a href="<?php echo get_option('msdsocial_pinterest_link'); ?>" class="pin fa fa-pinterest" title="Pinterest" target="_blank"></a>
-    <?php }?>
-    <?php if(get_option('msdsocial_google_link')!=""){ ?>
-        <a href="<?php echo get_option('msdsocial_google_link'); ?>" class="gl fa fa-google-plus" title="Google+" target="_blank"></a>
-    <?php }?>
-    <?php if(get_option('msdsocial_linkedin_link')!=""){ ?>
-        <a href="<?php echo get_option('msdsocial_linkedin_link'); ?>" class="li fa fa-linkedin" title="LinkedIn" target="_blank"></a>
-    <?php }?>
-    <?php if(get_option('msdsocial_instagram_link')!=""){ ?>
-        <a href="<?php echo get_option('msdsocial_instagram_link'); ?>" class="fl fa fa-instagram" title="Instagram" target="_blank"></a>
-    <?php }?>
-    <?php if(get_option('msdsocial_tumblr_link')!=""){ ?>
-        <a href="<?php echo get_option('msdsocial_tumblr_link'); ?>" class="fl fa fa-tumblr" title="Tumblr" target="_blank"></a>
-    <?php }?>
-    <?php if(get_option('msdsocial_reddit_link')!=""){ ?>
-        <a href="<?php echo get_option('msdsocial_reddit_link'); ?>" class="fl fa fa-reddit" title="Reddit" target="_blank"></a>
-    <?php }?>
-    <?php if(get_option('msdsocial_flickr_link')!=""){ ?>
-        <a href="<?php echo get_option('msdsocial_flickr_link'); ?>" class="fl fa fa-flickr" title="Flickr" target="_blank"></a>
-    <?php }?>
-    <?php if(get_option('msdsocial_youtube_link')!=""){ ?>
-        <a href="<?php echo get_option('msdsocial_youtube_link'); ?>" class="yt fa fa-youtube" title="YouTube" target="_blank"></a>
-    <?php }?>
-    <?php if(get_option('msdsocial_vimeo_link')!=""){ ?>
-        <a href="<?php echo get_option('msdsocial_vimeo_link'); ?>" class="yt fa fa-vimeo-square" title="Vimeo" target="_blank"></a>
-    <?php }?>
-    <?php if(get_option('msdsocial_vine_link')!=""){ ?>
-        <a href="<?php echo get_option('msdsocial_vine_link'); ?>" class="yt fa fa-vine" title="Vine" target="_blank"></a>
-    <?php }?>
-    <?php if(get_option('msdsocial_sharethis_link')!=""){ ?>
-        <a href="<?php echo get_option('msdsocial_sharethis_link'); ?>" class="st fa fa-share-alt" title="ShareThis" target="_blank"></a>
-    <?php }?>
-    <?php if(get_option('msdsocial_contact_link')!=""){ ?>
-        <a href="<?php echo get_option('msdsocial_contact_link'); ?>" class="st fa fa-envelope" title="Contact Us" target="_blank"></a>
-    <?php }?>
-    <?php if(get_option('msdsocial_show_feed')!=""){ ?>
-        <a href="<?php bloginfo('rss2_url'); ?>" class="rss fa fa-rss" title="RSS Feed" target="_blank"></a>
-    <?php }?>
-    </div>
-    <?php 
+    
+    $ret = '<div id="social-media" class="social-media">';
+    if(get_option('msdsocial_facebook_link')!=""){
+        $ret .= '<a href="'.get_option('msdsocial_facebook_link').'" class="fa fa-facebook" title="Join Us on Facebook!" target="_blank"></a>';
+    }    
+    if(get_option('msdsocial_twitter_user')!=""){
+        $ret .= '<a href="http://www.twitter.com/'.get_option('msdsocial_twitter_user').'" class="fa fa-twitter" title="Follow Us on Twitter!" target="_blank"></a>';
+    }    
+    if(get_option('msdsocial_pinterest_link')!=""){
+        $ret .= '<a href="'.get_option('msdsocial_pinterest_link').'" class="fa fa-pinterest" title="Pinterest" target="_blank"></a>';
+    }    
+    if(get_option('msdsocial_google_link')!=""){
+        $ret .= '<a href="'.get_option('msdsocial_google_link').'" class="fa fa-google-plus" title="Google+" target="_blank"></a>';
+    }    
+    if(get_option('msdsocial_linkedin_link')!=""){
+        $ret .= '<a href="'.get_option('msdsocial_linkedin_link').'" class="fa fa-linkedin" title="LinkedIn" target="_blank"></a>';
+    }    
+    if(get_option('msdsocial_instagram_link')!=""){
+        $ret .= '<a href="'.get_option('msdsocial_instagram_link').'" class="fa fa-instagram" title="Instagram" target="_blank"></a>';
+    }    
+    if(get_option('msdsocial_tumblr_link')!=""){
+        $ret .= '<a href="'.get_option('msdsocial_tumblr_link').'" class="fa fa-tumblr" title="Tumblr" target="_blank"></a>';
+    }    
+    if(get_option('msdsocial_reddit_link')!=""){
+        $ret .= '<a href="'.get_option('msdsocial_reddit_link').'" class="fa fa-reddit" title="Reddit" target="_blank"></a>';
+    }    
+    if(get_option('msdsocial_flickr_link')!=""){
+        $ret .= '<a href="'.get_option('msdsocial_flickr_link').'" class="fa fa-flickr" title="Flickr" target="_blank"></a>';
+    }    
+    if(get_option('msdsocial_youtube_link')!=""){
+        $ret .= '<a href="'.get_option('msdsocial_youtube_link').'" class="fa fa-youtube" title="YouTube" target="_blank"></a>';
+    }    
+    if(get_option('msdsocial_vimeo_link')!=""){
+        $ret .= '<a href="'.get_option('msdsocial_vimeo_link').'" class="fa fa-vimeo-square" title="Vimeo" target="_blank"></a>';
+    }    
+    if(get_option('msdsocial_vine_link')!=""){
+        $ret .= '<a href="'.get_option('msdsocial_vine_link').'" class="fa fa-vine" title="Vine" target="_blank"></a>';
+    }    
+    if(get_option('msdsocial_sharethis_link')!=""){
+        $ret .= '<a href="'.get_option('msdsocial_sharethis_link').'" class="fa fa-share-alt" title="ShareThis" target="_blank"></a>';
+    }    
+    if(get_option('msdsocial_contact_link')!=""){
+        $ret .= '<a href="'.get_option('msdsocial_contact_link').'" class="fa fa-envelope" title="Contact Us" target="_blank"></a>';
+    }    
+    if(get_option('msdsocial_show_feed')!=""){
+        $ret .= '<a href="'.get_bloginfo('rss2_url').'" class="fa fa-rss" title="RSS Feed" target="_blank"></a>';
+    }
+    $ret .= '</div>';
+    return $ret;
 }
 
 function requireDir($dir){

@@ -18,5 +18,5 @@ add_action('genesis_before_footer','genesis_footer_widget_areas');
  */
 //remove_all_actions('genesis_loop');
 //add_action('genesis_loop','msd_scrollie_page');
-print $msd_social->get_hours();
 genesis();
+print $msd_social->social_media();
