@@ -29,13 +29,18 @@ function msdsocial_theme_page ()
 		'mailing_city',
 		'mailing_state',
 		'mailing_zip',
-		'linkedin_link',
-		'twitter_user',
-		'google_link',
 		'facebook_link',
-		'flickr_link',
-		'youtube_link',
-		'landing_link',
+		'twitter_user',
+		'pinterest_link',
+		'google_link',
+		'linkedin_link',
+        'instagram_link',
+        'tumblr_link',
+        'reddit_link',
+        'flickr_link',
+        'youtube_link',
+        'vimeo_link',
+        'vine_link',
 		'sharethis_link',
 		'contact_link',
 		'show_feed',
@@ -167,61 +172,91 @@ $states = array('ALABAMA'=>"AL",
           <p>Please supply full urls except as indicated. Leave blank any items you do not wish to display.</p>
           <ul class="input-table">
               <li>
-                  <label for="google_link">Google+ Link</label>
-                  <div class="input">
-                    <input name="google_link" type="text" id="google_link" value="<?php echo get_option('msdsocial_google_link'); ?>" class="regular-text" />
-                  </div>
-              </li>
-              <li>
-                  <label for="facebook_link">Facebook Link</label>
+                  <label for="facebook_link">Facebook Link <i class="fa fa-facebook"></i></label>
                   <div class="input">
                     <input name="facebook_link" type="text" id="facebook_link" value="<?php echo get_option('msdsocial_facebook_link'); ?>" class="regular-text" />
                   </div>
               </li>
               <li>
-                  <label for="twitter_user">Twitter (username only)</label>
+                  <label for="twitter_user">Twitter (username only) <i class="fa fa-twitter"></i></label>
                   <div class="input">
                     <input name="twitter_user" type="text" id="twitter_user" value="<?php echo get_option('msdsocial_twitter_user'); ?>" class="regular-text" />
                   </div>
               </li>
               <li>
-                  <label for="linkedin_link">LinkedIn Link</label>
+                  <label for="pinterest_link">Pinterest Link <i class="fa fa-pinterest"></i></label>
+                  <div class="input">
+                    <input name="pinterest_link" type="text" id="pinterest_link" value="<?php echo get_option('msdsocial_pinterest_link'); ?>" class="regular-text" />
+                  </div>
+              </li>
+              <li>
+                  <label for="google_link">Google+ Link <i class="fa fa-google-plus"></i></label>
+                  <div class="input">
+                    <input name="google_link" type="text" id="google_link" value="<?php echo get_option('msdsocial_google_link'); ?>" class="regular-text" />
+                  </div>
+              </li>
+              <li>
+                  <label for="linkedin_link">LinkedIn Link <i class="fa fa-linkedin"></i></label>
                   <div class="input">
                     <input name="linkedin_link" type="text" id="linkedin_link" value="<?php echo get_option('msdsocial_linkedin_link'); ?>" class="regular-text" />
                   </div>
               </li>
               <li>
-                  <label for="flickr_link">Flickr Link</label>
+                  <label for="instagram_link">Instagram Link <i class="fa fa-instagram"></i></label>
                   <div class="input">
-                    <input name="flickr_link" type="text" id="flickr_link" value="<?php echo get_option('msdsocial_flickr_link'); ?>" class="regular-text" />
+                    <input name="instagram_link" type="text" id="instagram_link" value="<?php echo get_option('msdsocial_instagram_link'); ?>" class="regular-text" />
                   </div>
               </li>
               <li>
-                  <label for="youtube_link">YouTube Link</label>
-                  <div class="input">
-                    <input name="youtube_link" type="text" id="youtube_link" value="<?php echo get_option('msdsocial_youtube_link'); ?>" class="regular-text" />
-                  </div>
-              </li>
-              <li>
-                  <label for="sharethis_link">Sharethis Link</label>
-                  <div class="input">
-                    <input name="sharethis_link" type="text" id="sharethis_link" value="<?php echo get_option('msdsocial_sharethis_link'); ?>" class="regular-text" />
-                  </div>
-              </li>
-              <li>
-                  <label for="tumblr_link">Tumblr Link</label>
+                  <label for="tumblr_link">Tumblr Link <i class="fa fa-tumblr"></i></label>
                   <div class="input">
                     <input name="tumblr_link" type="text" id="tumblr_link" value="<?php echo get_option('msdsocial_tumblr_link'); ?>" class="regular-text" />
                   </div>
               </li>
               <li>
-                  <label for="contact_link">Contact Link</label>
+                  <label for="reddit_link">Reddit Link <i class="fa fa-reddit"></i></label>
+                  <div class="input">
+                    <input name="reddit_link" type="text" id="reddit_link" value="<?php echo get_option('msdsocial_reddit_link'); ?>" class="regular-text" />
+                  </div>
+              </li>
+              <li>
+                  <label for="flickr_link">Flickr Link <i class="fa fa-flickr"></i></label>
+                  <div class="input">
+                    <input name="flickr_link" type="text" id="flickr_link" value="<?php echo get_option('msdsocial_flickr_link'); ?>" class="regular-text" />
+                  </div>
+              </li>
+              <li>
+                  <label for="youtube_link">YouTube Link <i class="fa fa-youtube"></i></label>
+                  <div class="input">
+                    <input name="youtube_link" type="text" id="youtube_link" value="<?php echo get_option('msdsocial_youtube_link'); ?>" class="regular-text" />
+                  </div>
+              </li>
+              <li>
+                  <label for="vimeo_link">Vimeo Link <i class="fa fa-vimeo-square"></i></label>
+                  <div class="input">
+                    <input name="vimeo_link" type="text" id="vimeo_link" value="<?php echo get_option('msdsocial_vimeo_link'); ?>" class="regular-text" />
+                  </div>
+              </li>
+              <li>
+                  <label for="vine_link">Vine Link <i class="fa fa-vine"></i></label>
+                  <div class="input">
+                    <input name="vine_link" type="text" id="vine_link" value="<?php echo get_option('msdsocial_vine_link'); ?>" class="regular-text" />
+                  </div>
+              </li>
+              <li>
+                  <label for="sharethis_link">Sharethis Link <i class="fa fa-share-alt"></i></label>
+                  <div class="input">
+                    <input name="sharethis_link" type="text" id="sharethis_link" value="<?php echo get_option('msdsocial_sharethis_link'); ?>" class="regular-text" />
+                  </div>
+              </li>
+              <li>
+                  <label for="contact_link">Contact Link <i class="fa fa-envelope"></i></label>
                   <div class="input">
                     <input name="contact_link" type="text" id="contact_link" value="<?php echo get_option('msdsocial_contact_link'); ?>" class="regular-text" />
                   </div>
               </li>
               <li>
-                  <label for="show_feed">Show Feed?</label>
+                  <label for="show_feed">Show Feed? <i class="fa fa-rss"></i></label>
                   <div class="input">
                     <input name="show_feed" type="checkbox" id="show_feed" value="true" <?php print get_option('msdsocial_show_feed')==true?'CHECKED':''; ?>> yes
                   </div>
@@ -376,10 +411,11 @@ $states = array('ALABAMA'=>"AL",
                   <label></label>
                   <div class="input">
                     <div class="col-sm-1"><strong>Closed</strong></div>
-                    <div class="col-sm-11">
+                    <div class="col-sm-8">
                         <div class="col-sm-6"><strong>Open</strong></div>
                         <div class="col-sm-6"><strong>Close</strong></div>
                     </div>
+                    <div class="col-sm-1"><strong>Copy</strong></div>
                   </div>
               </li>
             <?php 
@@ -394,9 +430,9 @@ $states = array('ALABAMA'=>"AL",
             );
             foreach ($days as $day) {
                 $open = get_option('msdsocial_hours_'.strtolower($day).'_open');
-                $closed = get_option('msdsocial_hours_'.strtolower($day).'_close');
-                $checked = $open==$closed?' checked':'';
-                $hide = $open==$closed?' hidden':'';
+                $close = get_option('msdsocial_hours_'.strtolower($day).'_close');
+                $checked = $open==''||$close==''?' checked':'';
+                $hide = $open==''||$close==''?' hidden':'';
                 ?>
               <li>
                   <label for="hours_<?php print strtolower($day); ?>"><?php print $day; ?></label>
@@ -404,13 +440,18 @@ $states = array('ALABAMA'=>"AL",
                       <div class="col-sm-1">
                           <input type="checkbox" class="closed-check" <?php print $checked; ?> />
                       </div>
-                      <div class="col-sm-11">
-                          <div class="col-sm-6 input-append bootstrap-timepicker">
-                            <input name="hours_<?php print strtolower($day); ?>_open" type="text" id="hours_<?php print strtolower($day); ?>_open" value="<?php echo get_option('msdsocial_hours_'.strtolower($day).'_open'); ?>" class="regular-text time<?php print $hide; ?>" />
+                      <div class="col-sm-8">
+                          <div class="col-sm-5 input-append bootstrap-timepicker">
+                            <input name="hours_<?php print strtolower($day); ?>_open" type="text" id="hours_<?php print strtolower($day); ?>_open" value="<?php echo get_option('msdsocial_hours_'.strtolower($day).'_open'); ?>" class="regular-text start time<?php print $hide; ?>" />
                           </div>
-                          <div class="col-sm-6  input-append bootstrap-timepicker">
-                            <input name="hours_<?php print strtolower($day); ?>_close" type="text" id="hours_<?php print strtolower($day); ?>_close" value="<?php echo get_option('msdsocial_hours_'.strtolower($day).'_close'); ?>" class="regular-text time<?php print $hide; ?>" />
+                          <div class="col-sm-5  input-append bootstrap-timepicker">
+                            <input name="hours_<?php print strtolower($day); ?>_close" type="text" id="hours_<?php print strtolower($day); ?>_close" value="<?php echo get_option('msdsocial_hours_'.strtolower($day).'_close'); ?>" class="regular-text end time<?php print $hide; ?>" />
                           </div>
+                      </div>
+                      <div class="col-sm-1">
+                          <?php if($day != 'Sunday'): ?>
+                          <a class="btn btn-default copy">Copy Previous Day</a>
+                          <?php endif; ?>
                       </div>
                   </div>
               </li>
@@ -451,6 +492,12 @@ jQuery(document).ready(function($) {
         } else {
             sibs.removeClass('hidden');
         }
+    });
+    $('.copy').click(function(){
+        var cur = $(this).parent().parent();
+        var prev = $(this).parent().parent().parent().prev('li').find('.input');
+        cur.find('.time.start').val(prev.find('.time.start').val());
+        cur.find('.time.end').val(prev.find('.time.end').val());
     });
 });
 </script>
