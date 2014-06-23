@@ -2,7 +2,7 @@
 /**
  * Pages Module
  *
- * @version $Id: pages_module.php 863947 2014-02-24 09:53:16Z qurl $
+ * @version $Id: pages_module.php 937227 2014-06-23 15:10:15Z qurl $
  * @copyright 2011 Jacco Drabbe
  */
 
@@ -24,10 +24,10 @@
 			self::$opt = $DW->getDWOpt($_GET['id'], 'page');
 			self::$opt_page = self::$opt;
 			if ( self::$opt->count > 0 ) {
-				self::$opt_page_childs = $DW->getDWOpt($_GET['id'], 'page-childs');
+				self::$opt_page_childs = $DW->getDWOpt($_GLOBALS['widget_id'], 'page-childs');
 			}
 
-			$pages = get_pages();
+			$pages = get_pages( array('post_status' => 'publish,private') );
 			$num_pages = count($pages);
 			unset($pages);
 

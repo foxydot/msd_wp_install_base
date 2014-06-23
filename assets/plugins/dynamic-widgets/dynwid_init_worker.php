@@ -2,12 +2,12 @@
 /**
  * dynwid_init_worker.php
  *
- * @version $Id: dynwid_init_worker.php 618242 2012-10-28 14:00:39Z qurl $
+ * @version $Id: dynwid_init_worker.php 937227 2014-06-23 15:10:15Z qurl $
  * @copyright 2011 Jacco Drabbe
  */
 
 	$DW->message('Dynamic Widgets INIT');
-	echo "\n" . '<!-- Dynamic Widgets v' . DW_VERSION . ' by QURL - http://www.qurl.nl //-->' . "\n";
+	echo "\n" . '<!-- Dynamic Widgets by QURL - http://www.qurl.nl //-->' . "\n";
 
 	// Register the overrule maintypes
 	$DW->registerOverrulers();
