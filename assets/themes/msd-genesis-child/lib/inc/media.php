@@ -10,6 +10,8 @@ add_filter( 'genesis_pre_load_favicon', 'msdlab_favicon_filter' );
 function msdlab_favicon_filter( $favicon_url ) {
     return get_stylesheet_directory_uri().'/lib/img/favicon.ico';
 }
+
+//add_action('genesis_before_content','msd_post_image');
 /**
  * Manipulate the featured image
  */
@@ -25,7 +27,9 @@ function msd_post_image() {
 
     // This is the most important part!  Checks to see if the post has a Post Thumbnail assigned to it. You can delete the if conditional if you want and assume that there will always be a thumbnail
     if ( has_post_thumbnail() && is_page() ) {
+        print '<section class="header-image">';
         printf( '<a title="%s" href="%s">%s</a>', get_permalink(), the_title_attribute( 'echo=0' ), genesis_get_image( array( 'size' => $size, 'attr' => $default_attr ) ) );
+        print '</section>';
     }
 
 }
@@ -73,12 +77,18 @@ function msd_carousel_wrapper($slides,$params = array()){
     extract( array_merge( array(
     'id' => NULL,
     'navleft' => '‹',
-    'navright' => '›'
+    'navright' => '›',
+    'indicators' => FALSE
     ), $params ) );
-    return '
-<div class="carousel slide" id="myCarousel_'.$id.'">
-    <div class="carousel-inner">'.($slides).'</div>
-    <a data-slide="prev" href="#myCarousel_'.$id.'" class="left carousel-control">'.$navleft.'</a>
-    <a data-slide="next" href="#myCarousel_'.$id.'" class="right carousel-control">'.$navright.'</a>
+    $ret = '
+<div class="carousel carousel-fade slide" id="myCarousel_'.$id.'">';
+    if($indicators){
+        $ret .= '<ol class="carousel-indicators">'.$indicators.'</ol>';
+    }
+    $ret .= '<div class="carousel-inner">'.($slides).'</div>
+    <div class="carousel-controls">
+        <a data-slide="prev" href="#myCarousel_'.$id.'" class="left carousel-control">'.$navleft.'</a>
+        <a data-slide="next" href="#myCarousel_'.$id.'" class="right carousel-control">'.$navright.'</a>
+    </div>
 </div>';
 }

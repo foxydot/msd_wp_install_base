@@ -26,6 +26,21 @@ function msdlab_pre_header(){
     </div>';
 }
 
+function msdlab_header_right(){
+    global $wp_registered_sidebars;
+    if( ( isset( $wp_registered_sidebars['pre-header'] ) && is_active_sidebar( 'pre-header' ) )){
+    genesis_markup( array(
+            'html5'   => '<aside %s>',
+            'xhtml'   => '<div class="widget-area header-widget-area">',
+            'context' => 'header-widget-area',
+        ) );
+    dynamic_sidebar( 'pre-header' );
+    genesis_markup( array(
+            'html5' => '</aside>',
+            'xhtml' => '</div>',
+        ) );
+    }
+}
  /**
  * Customize search form input
  */
@@ -51,6 +66,25 @@ function msdlab_search_form($form, $search_text, $button_text, $label){
     else
         $form = sprintf( '<form method="get" class="searchform search-form" action="%s" role="search" >%s<input type="text" value="%s" name="s" class="s search-input" onfocus="%s" onblur="%s" /><input type="submit" class="searchsubmit search-submit" value="%s" /></form>', home_url( '/' ), esc_html( $label ), esc_attr( $search_text ), esc_attr( $onfocus ), esc_attr( $onblur ), esc_attr( $button_text ) );
     return $form;
+}
+
+
+function msdlab_page_banner(){
+    if(is_front_page())
+        return;
+    global $post;
+    if(is_page()) {
+        $featured_image = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'page_banner' );
+        $background = $featured_image[0];
+        remove_action('genesis_entry_header', 'genesis_do_post_title');
+    }
+    $title = $title != ''?sprintf( '<h3>%s</h3>', apply_filters( 'genesis_post_title_text', $title ) ):'';
+    $ret = '<section class="banner">
+        <div class="wrap" style="background-image:url('.$background.')">
+            <h1 itemprop="headline" class="entry-title">'.get_the_title().'</h1>
+        </wrap>
+       </section>';
+    print $ret;
 }
 
 /*** NAV ***/
