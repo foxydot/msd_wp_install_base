@@ -64,13 +64,13 @@ function get_bizname(){
 function get_address(){
 	if((get_option('msdsocial_street')!='') || (get_option('msdsocial_city')!='') || (get_option('msdsocial_state')!='') || (get_option('msdsocial_zip')!='')) {
 		$ret = '<address itemscope itemtype="http://schema.org/LocalBusiness">';
-			$ret .= (get_option('msdsocial_street')!='')?'<span itemprop="streetAddress">'.get_option('msdsocial_street').'</span> ':'';
-			$ret .= (get_option('msdsocial_street2')!='')?'<span itemprop="streetAddress">'.get_option('msdsocial_street2').'</span> ':'';
-			$ret .= (get_option('msdsocial_city')!='')?'<span itemprop="addressLocality">'.get_option('msdsocial_city').'</span>, ':'';
-			$ret .= (get_option('msdsocial_state')!='')?'<span itemprop="addressRegion">'.get_option('msdsocial_state').'</span> ':'';
-			$ret .= (get_option('msdsocial_zip')!='')?'<span itemprop="postalCode">'.get_option('msdsocial_zip').'</span> ':'';
+			$ret .= (get_option('msdsocial_street')!='')?'<span itemprop="streetAddress" class="msdsocial_street">'.get_option('msdsocial_street').'</span> ':'';
+			$ret .= (get_option('msdsocial_street2')!='')?'<span itemprop="streetAddress" class="msdsocial_street_2">'.get_option('msdsocial_street2').'</span> ':'';
+			$ret .= (get_option('msdsocial_city')!='')?'<span itemprop="addressLocality" class="msdsocial_city">'.get_option('msdsocial_city').'</span>, ':'';
+			$ret .= (get_option('msdsocial_state')!='')?'<span itemprop="addressRegion" class="msdsocial_state">'.get_option('msdsocial_state').'</span> ':'';
+			$ret .= (get_option('msdsocial_zip')!='')?'<span itemprop="postalCode" class="msdsocial_zip">'.get_option('msdsocial_zip').'</span> ':'';
 		$ret .= '</address>';
-		return $ret;
+		  return $ret;
 		} else {
 			return false;
 		} 
