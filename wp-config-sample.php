@@ -79,6 +79,8 @@ define('WPLANG', '');
  * in their development environments.
  */
 define('WP_DEBUG', false);
+define( 'WP_CONTENT_DIR', dirname(__FILE__) . '/assets' );
+define( 'WP_CONTENT_URL', 'http://'.$_SERVER['SERVER_NAME'].'/assets' );
 
 /* That's all, stop editing! Happy blogging. */
 

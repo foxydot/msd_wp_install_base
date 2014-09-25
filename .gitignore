@@ -27,6 +27,8 @@ assets/*
 # specify (see the commented-out examples for hints on how to do this.)
 assets/plugins/*
 !assets/plugins/msd*
+assets/plugins/msd-image-widget/.git
+assets/plugins/msd-image-widget/.gitignore
 # !assets/plugins/my-directory-plugin/
 
 # Ignore everything in the "themes" directory, except the themes you
