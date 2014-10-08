@@ -2,7 +2,7 @@
 /**
  * Author Module
  *
- * @version $Id: author_module.php 937227 2014-06-23 15:10:15Z qurl $
+ * @version $Id: author_module.php 938420 2014-06-25 11:18:19Z qurl $
  * @copyright 2011 Jacco Drabbe
  */
 
@@ -39,7 +39,7 @@
 			return $list;
 		}
 
-		public static function mkGUI($type, $title, $question, $info = FALSE) {
+		public static function mkGUI($type, $title, $question, $info = FALSE, $except = FALSE, $list = FALSE, $name = NULL) {
 			$DW = &$GLOBALS['DW'];
 			$list = self::getAuthors();
 

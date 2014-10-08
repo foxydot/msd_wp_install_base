@@ -2,7 +2,7 @@
 /**
  * Category Module
  *
- * @version $Id: category_module.php 937227 2014-06-23 15:10:15Z qurl $
+ * @version $Id: category_module.php 938226 2014-06-25 05:16:47Z qurl $
  * @copyright 2011 Jacco Drabbe
  */
 
@@ -46,7 +46,7 @@
 			$list = get_categories( array('hide_empty' => FALSE) );
 			$catmap = self::getCatChilds(array(), 0, array());
 
-			if (! is_null($opt) ) {
+			if (! is_null($name) ) {
 				self::$opt = $name;
 			}
 			if ( self::$opt->count > 0 ) {
@@ -66,7 +66,7 @@
 			_e(self::$except, DW_L10N_DOMAIN);
 			echo '<br />';
 			echo '<div id="' . self::$name . '-select" class="condition-select" ' . ( (isset($select_style)) ? $select_style : '' ) . ' />';
-			self::prtCat($catmap, self::$opt->act, $childs, $single);
+			self::prtCat($catmap, self::$opt->act, $childs, $extra);
 			echo '</div>' . "\n";
 		}
 

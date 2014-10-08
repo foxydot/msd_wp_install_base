@@ -2,7 +2,7 @@
 /**
  * dynwid_init_worker.php
  *
- * @version $Id: dynwid_init_worker.php 937227 2014-06-23 15:10:15Z qurl $
+ * @version $Id: dynwid_init_worker.php 939272 2014-06-26 19:44:38Z qurl $
  * @copyright 2011 Jacco Drabbe
  */
 
@@ -15,6 +15,9 @@
 
 	// UserAgent detection
 	$DW->message('UserAgent: ' . $DW->useragent);
+	
+	//IP 
+	$DW->message('IP: ' . $DW->ip_address);
 
 	$DW->message('Today it is ' . date('l', current_time('timestamp', 0)) . ' (' . date('N', current_time('timestamp', 0)) . '), Week: ' . date('W', current_time('timestamp', 0)));
 

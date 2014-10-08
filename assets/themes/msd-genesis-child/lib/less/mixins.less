@@ -2,15 +2,31 @@
 /* Import Fonts
 ------------------------------------------------------------ */
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
 
 /* Font Stacks */
-.opensans {
-	font-family: "Open Sans", "Trebuchet MS", Calibri, sans-serif;
+/* Font Stacks */
+.customsansserif(@size:1.6) {
+  font-family: "Open Sans", "Trebuchet MS", Calibri, sans-serif;
+  font-weight: 400;
+  font-size: unit((@size*10),px);
+  font-size: unit(@size,rem);
 }
-.arial {
-    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+.customsanserif(@size:1.6){
+  .customsansserif(@size);
 }
+
+.arial(@size:1.6) {
+  font-family: "Trebucet MS","Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: unit((@size*10),px);
+  font-size: unit(@size,rem);
+}
+
+.fontawesome {
+  font-family: FontAwesome;
+}
+
 
 /* Colors */
 @red: #f00;
