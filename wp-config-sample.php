@@ -62,6 +62,12 @@ define('NONCE_SALT',       'put your unique phrase here');
 $table_prefix  = 'wp_';
 
 /**
+ * Move content director for additional security
+ */
+define( 'WP_CONTENT_DIR', dirname(__FILE__) . '/assets' );
+define( 'WP_CONTENT_URL', 'http://'.$_SERVER['SERVER_NAME'].'/assets' );
+
+/**
  * For developers: WordPress debugging mode.
  *
  * Change this to true to enable the display of notices during development.
