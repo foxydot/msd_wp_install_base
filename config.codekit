@@ -1,6 +1,6 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "17682",
+"creatorBuild": "18027",
 "files": {
 	"\/assets\/index.php": {
 		"fileType": 8192,
@@ -5128,6 +5128,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/assets\/plugins\/better-wp-security\/core\/class-itsec-notify.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/better-wp-security\/core\/class-itsec-notify.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/assets\/plugins\/better-wp-security\/core\/class-itsec-setup.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -5253,6 +5262,17 @@
 		"initialSize": 341,
 		"inputAbbreviatedPath": "\/assets\/plugins\/better-wp-security\/core\/img\/flag16-yellow.png",
 		"outputAbbreviatedPath": "\/assets\/plugins\/better-wp-security\/core\/img\/flag16-yellow.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/plugins\/better-wp-security\/core\/img\/green-check16.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 275,
+		"inputAbbreviatedPath": "\/assets\/plugins\/better-wp-security\/core\/img\/green-check16.png",
+		"outputAbbreviatedPath": "\/assets\/plugins\/better-wp-security\/core\/img\/green-check16.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -5547,6 +5567,24 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/assets\/plugins\/better-wp-security\/modules\/free\/away-mode\/css\/index.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/better-wp-security\/modules\/free\/away-mode\/css\/index.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/assets\/plugins\/better-wp-security\/modules\/free\/away-mode\/css\/smoothness\/images\/index.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/better-wp-security\/modules\/free\/away-mode\/css\/smoothness\/images\/index.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/assets\/plugins\/better-wp-security\/modules\/free\/away-mode\/css\/smoothness\/images\/ui-bg_flat_0_aaaaaa_40x100.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -5689,6 +5727,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
+		},
+	"\/assets\/plugins\/better-wp-security\/modules\/free\/away-mode\/css\/smoothness\/index.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/better-wp-security\/modules\/free\/away-mode\/css\/smoothness\/index.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/assets\/plugins\/better-wp-security\/modules\/free\/away-mode\/css\/smoothness\/jquery-ui-1.10.4.custom.css": {
 		"fileType": 16,
@@ -6059,13 +6106,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/plugins\/better-wp-security\/modules\/free\/core\/img\/sync-logo.jpg": {
-		"fileType": 16384,
+	"\/assets\/plugins\/better-wp-security\/modules\/free\/core\/img\/sync-logo.png": {
+		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 3036,
-		"inputAbbreviatedPath": "\/assets\/plugins\/better-wp-security\/modules\/free\/core\/img\/sync-logo.jpg",
-		"outputAbbreviatedPath": "\/assets\/plugins\/better-wp-security\/modules\/free\/core\/img\/sync-logo.jpg",
+		"initialSize": 8332,
+		"inputAbbreviatedPath": "\/assets\/plugins\/better-wp-security\/modules\/free\/core\/img\/sync-logo.png",
+		"outputAbbreviatedPath": "\/assets\/plugins\/better-wp-security\/modules\/free\/core\/img\/sync-logo.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -6677,6 +6724,145 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/plugins\/better-wp-security\/modules\/free\/index.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/assets\/plugins\/better-wp-security\/modules\/free\/ipcheck\/class-itsec-ipcheck-admin.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/better-wp-security\/modules\/free\/ipcheck\/class-itsec-ipcheck-admin.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/assets\/plugins\/better-wp-security\/modules\/free\/ipcheck\/class-itsec-ipcheck.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/better-wp-security\/modules\/free\/ipcheck\/class-itsec-ipcheck.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/assets\/plugins\/better-wp-security\/modules\/free\/ipcheck\/index.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/better-wp-security\/modules\/free\/ipcheck\/index.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/assets\/plugins\/better-wp-security\/modules\/free\/ipcheck\/js\/admin-ipcheck.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/better-wp-security\/modules\/free\/ipcheck\/js\/admin-ipcheck.js",
+		"outputAbbreviatedPath": "\/assets\/plugins\/better-wp-security\/modules\/free\/ipcheck\/js\/min\/admin-ipcheck-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/plugins\/better-wp-security\/modules\/free\/ipcheck\/js\/index.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/better-wp-security\/modules\/free\/ipcheck\/js\/index.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/assets\/plugins\/better-wp-security\/modules\/free\/ipcheck\/setup.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/better-wp-security\/modules\/free\/ipcheck\/setup.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/assets\/plugins\/better-wp-security\/modules\/free\/malware\/class-ithemes-sync-verb-itsec-get-malware-scan-results.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/better-wp-security\/modules\/free\/malware\/class-ithemes-sync-verb-itsec-get-malware-scan-results.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/assets\/plugins\/better-wp-security\/modules\/free\/malware\/class-ithemes-sync-verb-itsec-perform-homepage-scan.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/better-wp-security\/modules\/free\/malware\/class-ithemes-sync-verb-itsec-perform-homepage-scan.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/assets\/plugins\/better-wp-security\/modules\/free\/malware\/class-itsec-malware-admin.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/better-wp-security\/modules\/free\/malware\/class-itsec-malware-admin.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/assets\/plugins\/better-wp-security\/modules\/free\/malware\/class-itsec-malware-log.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/better-wp-security\/modules\/free\/malware\/class-itsec-malware-log.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/assets\/plugins\/better-wp-security\/modules\/free\/malware\/class-itsec-malware.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/better-wp-security\/modules\/free\/malware\/class-itsec-malware.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/assets\/plugins\/better-wp-security\/modules\/free\/malware\/index.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/better-wp-security\/modules\/free\/malware\/index.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/assets\/plugins\/better-wp-security\/modules\/free\/malware\/js\/admin-malware.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/better-wp-security\/modules\/free\/malware\/js\/admin-malware.js",
+		"outputAbbreviatedPath": "\/assets\/plugins\/better-wp-security\/modules\/free\/malware\/js\/min\/admin-malware-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/plugins\/better-wp-security\/modules\/free\/malware\/js\/index.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/better-wp-security\/modules\/free\/malware\/js\/index.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/assets\/plugins\/better-wp-security\/modules\/free\/malware\/setup.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/better-wp-security\/modules\/free\/malware\/setup.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -7333,6 +7519,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/plugins\/dynamic-widgets\/mods\/frontpage_module.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/assets\/plugins\/dynamic-widgets\/mods\/ip_module.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/dynamic-widgets\/mods\/ip_module.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -8999,6 +9194,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/plugins\/gravityforms\/images\/chosen-sprite@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 872,
+		"inputAbbreviatedPath": "\/assets\/plugins\/gravityforms\/images\/chosen-sprite@2x.png",
+		"outputAbbreviatedPath": "\/assets\/plugins\/gravityforms\/images\/chosen-sprite@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/plugins\/gravityforms\/images\/close.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -10407,6 +10613,117 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/plugins\/msd-custom-cpt\/msd-custom-cpt.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/assets\/plugins\/msd-image-widget\/image-widget.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/msd-image-widget\/image-widget.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/assets\/plugins\/msd-image-widget\/lib\/ImageWidgetDeprecated.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/msd-image-widget\/lib\/ImageWidgetDeprecated.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/assets\/plugins\/msd-image-widget\/resources\/js\/image-widget.deprecated.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/msd-image-widget\/resources\/js\/image-widget.deprecated.js",
+		"outputAbbreviatedPath": "\/assets\/plugins\/msd-image-widget\/resources\/js\/min\/image-widget.deprecated-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/plugins\/msd-image-widget\/resources\/js\/image-widget.deprecated.upload-fixer.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/msd-image-widget\/resources\/js\/image-widget.deprecated.upload-fixer.js",
+		"outputAbbreviatedPath": "\/assets\/plugins\/msd-image-widget\/resources\/js\/min\/image-widget.deprecated.upload-fixer-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/plugins\/msd-image-widget\/resources\/js\/image-widget.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/msd-image-widget\/resources\/js\/image-widget.js",
+		"outputAbbreviatedPath": "\/assets\/plugins\/msd-image-widget\/resources\/js\/min\/image-widget-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/plugins\/msd-image-widget\/screenshot-1.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 33911,
+		"inputAbbreviatedPath": "\/assets\/plugins\/msd-image-widget\/screenshot-1.png",
+		"outputAbbreviatedPath": "\/assets\/plugins\/msd-image-widget\/screenshot-1.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/plugins\/msd-image-widget\/screenshot-2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 82515,
+		"inputAbbreviatedPath": "\/assets\/plugins\/msd-image-widget\/screenshot-2.png",
+		"outputAbbreviatedPath": "\/assets\/plugins\/msd-image-widget\/screenshot-2.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/plugins\/msd-image-widget\/screenshot-3.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 86746,
+		"inputAbbreviatedPath": "\/assets\/plugins\/msd-image-widget\/screenshot-3.png",
+		"outputAbbreviatedPath": "\/assets\/plugins\/msd-image-widget\/screenshot-3.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/plugins\/msd-image-widget\/views\/widget-admin.deprecated.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/msd-image-widget\/views\/widget-admin.deprecated.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/assets\/plugins\/msd-image-widget\/views\/widget-admin.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/msd-image-widget\/views\/widget-admin.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/assets\/plugins\/msd-image-widget\/views\/widget.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/msd-image-widget\/views\/widget.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -17553,6 +17870,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/assets\/plugins\/wordpress-seo\/admin\/class-bulk-editor-list-table.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/wordpress-seo\/admin\/class-bulk-editor-list-table.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/assets\/plugins\/wordpress-seo\/admin\/class-bulk-title-editor-list-table.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -17607,6 +17933,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/assets\/plugins\/wordpress-seo\/admin\/class-snippet-preview.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/wordpress-seo\/admin\/class-snippet-preview.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/assets\/plugins\/wordpress-seo\/admin\/class-taxonomy.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -17639,6 +17974,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/plugins\/wordpress-seo\/admin\/class-yoast-notification.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/assets\/plugins\/wordpress-seo\/admin\/index.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/wordpress-seo\/admin\/index.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -17715,6 +18059,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/assets\/plugins\/wordpress-seo\/admin\/license-manager\/index.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/wordpress-seo\/admin\/license-manager\/index.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/assets\/plugins\/wordpress-seo\/admin\/license-manager\/README.md": {
 		"enableFootnoteSupport": 0,
 		"enableSmartyPants": 1,
@@ -17724,6 +18077,15 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/plugins\/wordpress-seo\/admin\/license-manager\/README.md",
 		"outputAbbreviatedPath": "\/assets\/plugins\/wordpress-seo\/admin\/license-manager\/README.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/assets\/plugins\/wordpress-seo\/admin\/license-manager\/samples\/index.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/wordpress-seo\/admin\/license-manager\/samples\/index.php",
+		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
@@ -17763,6 +18125,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/assets\/plugins\/wordpress-seo\/admin\/license-manager\/views\/index.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/wordpress-seo\/admin\/license-manager\/views\/index.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/assets\/plugins\/wordpress-seo\/admin\/license-manager\/views\/script.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -17772,20 +18143,11 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/assets\/plugins\/wordpress-seo\/admin\/pages\/bulk-description-editor.php": {
+	"\/assets\/plugins\/wordpress-seo\/admin\/pages\/bulk-editor.php": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/plugins\/wordpress-seo\/admin\/pages\/bulk-description-editor.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/plugins\/wordpress-seo\/admin\/pages\/bulk-title-editor.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/plugins\/wordpress-seo\/admin\/pages\/bulk-title-editor.php",
+		"inputAbbreviatedPath": "\/assets\/plugins\/wordpress-seo\/admin\/pages\/bulk-editor.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -17942,6 +18304,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/plugins\/wordpress-seo\/css\/edit-page.min.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/assets\/plugins\/wordpress-seo\/css\/index.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/wordpress-seo\/css\/index.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -18108,16 +18479,14 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/assets\/plugins\/wordpress-seo\/Gruntfile.js": {
-		"fileType": 64,
+	"\/assets\/plugins\/wordpress-seo\/frontend\/index.php": {
+		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/plugins\/wordpress-seo\/Gruntfile.js",
-		"outputAbbreviatedPath": "\/assets\/plugins\/wordpress-seo\/min\/Gruntfile-ck.js",
+		"inputAbbreviatedPath": "\/assets\/plugins\/wordpress-seo\/frontend\/index.php",
+		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
+		"outputPathIsSetByUser": 0
 		},
 	"\/assets\/plugins\/wordpress-seo\/images\/banner-local-seo.png": {
 		"fileType": 32768,
@@ -18141,17 +18510,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/plugins\/wordpress-seo\/images\/banner-post-connector.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 53458,
-		"inputAbbreviatedPath": "\/assets\/plugins\/wordpress-seo\/images\/banner-post-connector.png",
-		"outputAbbreviatedPath": "\/assets\/plugins\/wordpress-seo\/images\/banner-post-connector.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/assets\/plugins\/wordpress-seo\/images\/banner-premium-seo.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -18159,17 +18517,6 @@
 		"initialSize": 47018,
 		"inputAbbreviatedPath": "\/assets\/plugins\/wordpress-seo\/images\/banner-premium-seo.png",
 		"outputAbbreviatedPath": "\/assets\/plugins\/wordpress-seo\/images\/banner-premium-seo.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/plugins\/wordpress-seo\/images\/banner-video-seo-manual.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 45944,
-		"inputAbbreviatedPath": "\/assets\/plugins\/wordpress-seo\/images\/banner-video-seo-manual.png",
-		"outputAbbreviatedPath": "\/assets\/plugins\/wordpress-seo\/images\/banner-video-seo-manual.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -18207,6 +18554,15 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/plugins\/wordpress-seo\/images\/index.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/wordpress-seo\/images\/index.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/assets\/plugins\/wordpress-seo\/images\/Local_130x100.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -18218,17 +18574,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/plugins\/wordpress-seo\/images\/Manual_130x100.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 11097,
-		"inputAbbreviatedPath": "\/assets\/plugins\/wordpress-seo\/images\/Manual_130x100.png",
-		"outputAbbreviatedPath": "\/assets\/plugins\/wordpress-seo\/images\/Manual_130x100.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/assets\/plugins\/wordpress-seo\/images\/News_SEO.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -18236,17 +18581,6 @@
 		"initialSize": 41896,
 		"inputAbbreviatedPath": "\/assets\/plugins\/wordpress-seo\/images\/News_SEO.png",
 		"outputAbbreviatedPath": "\/assets\/plugins\/wordpress-seo\/images\/News_SEO.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/plugins\/wordpress-seo\/images\/post-connector.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 41611,
-		"inputAbbreviatedPath": "\/assets\/plugins\/wordpress-seo\/images\/post-connector.png",
-		"outputAbbreviatedPath": "\/assets\/plugins\/wordpress-seo\/images\/post-connector.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -18295,75 +18629,11 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/plugins\/wordpress-seo\/images\/wordpress-SEO-32x32.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1588,
-		"inputAbbreviatedPath": "\/assets\/plugins\/wordpress-seo\/images\/wordpress-SEO-32x32.png",
-		"outputAbbreviatedPath": "\/assets\/plugins\/wordpress-seo\/images\/wordpress-SEO-32x32.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/plugins\/wordpress-seo\/images\/yoast-16x16.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 605,
-		"inputAbbreviatedPath": "\/assets\/plugins\/wordpress-seo\/images\/yoast-16x16.png",
-		"outputAbbreviatedPath": "\/assets\/plugins\/wordpress-seo\/images\/yoast-16x16.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/plugins\/wordpress-seo\/images\/yoast-icon-grey.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 453,
-		"inputAbbreviatedPath": "\/assets\/plugins\/wordpress-seo\/images\/yoast-icon-grey.png",
-		"outputAbbreviatedPath": "\/assets\/plugins\/wordpress-seo\/images\/yoast-icon-grey.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/plugins\/wordpress-seo\/images\/yoast-icon.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 493,
-		"inputAbbreviatedPath": "\/assets\/plugins\/wordpress-seo\/images\/yoast-icon.png",
-		"outputAbbreviatedPath": "\/assets\/plugins\/wordpress-seo\/images\/yoast-icon.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/plugins\/wordpress-seo\/images\/yoast-logo-rss.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 12064,
-		"inputAbbreviatedPath": "\/assets\/plugins\/wordpress-seo\/images\/yoast-logo-rss.png",
-		"outputAbbreviatedPath": "\/assets\/plugins\/wordpress-seo\/images\/yoast-logo-rss.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/assets\/plugins\/wordpress-seo\/inc\/class-rewrite.php": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/plugins\/wordpress-seo\/inc\/class-rewrite.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/plugins\/wordpress-seo\/inc\/class-sitemap-walker.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/plugins\/wordpress-seo\/inc\/class-sitemap-walker.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -18395,6 +18665,24 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/assets\/plugins\/wordpress-seo\/inc\/class-wpseo-replace-vars.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/wordpress-seo\/inc\/class-wpseo-replace-vars.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/assets\/plugins\/wordpress-seo\/inc\/index.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/wordpress-seo\/inc\/index.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/assets\/plugins\/wordpress-seo\/inc\/wpseo-functions.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -18409,6 +18697,24 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/plugins\/wordpress-seo\/inc\/wpseo-non-ajax-functions.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/assets\/plugins\/wordpress-seo\/index.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/wordpress-seo\/index.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/assets\/plugins\/wordpress-seo\/js\/index.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/wordpress-seo\/js\/index.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -18452,6 +18758,28 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/plugins\/wordpress-seo\/js\/wp-seo-admin-global.min.js",
 		"outputAbbreviatedPath": "\/assets\/plugins\/wordpress-seo\/js\/min\/wp-seo-admin-global.min-ck.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/plugins\/wordpress-seo\/js\/wp-seo-admin-media.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/wordpress-seo\/js\/wp-seo-admin-media.js",
+		"outputAbbreviatedPath": "\/assets\/plugins\/wordpress-seo\/js\/min\/wp-seo-admin-media-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/plugins\/wordpress-seo\/js\/wp-seo-admin-media.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/wordpress-seo\/js\/wp-seo-admin-media.min.js",
+		"outputAbbreviatedPath": "\/assets\/plugins\/wordpress-seo\/js\/min\/wp-seo-admin-media.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -18522,6 +18850,15 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/plugins\/wordpress-seo\/languages\/index.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/wordpress-seo\/languages\/index.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/assets\/plugins\/wordpress-seo\/README.md": {
 		"enableFootnoteSupport": 0,
@@ -18653,20 +18990,49 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/assets\/plugins\/wp-migrate-db-pro\/asset\/js\/script.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/wp-migrate-db-pro\/asset\/js\/script.min.js",
+		"outputAbbreviatedPath": "\/assets\/plugins\/wp-migrate-db-pro\/asset\/js\/min\/script.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/plugins\/wp-migrate-db-pro\/class\/wpmdb-base.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/wp-migrate-db-pro\/class\/wpmdb-base.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/assets\/plugins\/wp-migrate-db-pro\/class\/wpmdb-utils.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/wp-migrate-db-pro\/class\/wpmdb-utils.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/assets\/plugins\/wp-migrate-db-pro\/class\/wpmdb.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/wp-migrate-db-pro\/class\/wpmdb.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/assets\/plugins\/wp-migrate-db-pro\/class\/wpmdbpro-addon.php": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/plugins\/wp-migrate-db-pro\/class\/wpmdbpro-addon.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/plugins\/wp-migrate-db-pro\/class\/wpmdbpro-base.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/plugins\/wp-migrate-db-pro\/class\/wpmdbpro-base.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -18698,6 +19064,33 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/assets\/plugins\/wp-migrate-db-pro\/template\/common\/compatibility.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/wp-migrate-db-pro\/template\/common\/compatibility.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/assets\/plugins\/wp-migrate-db-pro\/template\/common\/debug-info.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/wp-migrate-db-pro\/template\/common\/debug-info.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/assets\/plugins\/wp-migrate-db-pro\/template\/common\/max-request-size.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/wp-migrate-db-pro\/template\/common\/max-request-size.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/assets\/plugins\/wp-migrate-db-pro\/template\/help.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -18721,6 +19114,114 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/plugins\/wp-migrate-db-pro\/template\/migrate.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/assets\/plugins\/wp-migrate-db-pro\/template\/options.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/wp-migrate-db-pro\/template\/options.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/assets\/plugins\/wp-migrate-db-pro\/template\/pro\/backup.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/wp-migrate-db-pro\/template\/pro\/backup.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/assets\/plugins\/wp-migrate-db-pro\/template\/pro\/connection-info.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/wp-migrate-db-pro\/template\/pro\/connection-info.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/assets\/plugins\/wp-migrate-db-pro\/template\/pro\/exclude-post-types.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/wp-migrate-db-pro\/template\/pro\/exclude-post-types.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/assets\/plugins\/wp-migrate-db-pro\/template\/pro\/invalid-licence-warning.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/wp-migrate-db-pro\/template\/pro\/invalid-licence-warning.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/assets\/plugins\/wp-migrate-db-pro\/template\/pro\/licence-info.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/wp-migrate-db-pro\/template\/pro\/licence-info.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/assets\/plugins\/wp-migrate-db-pro\/template\/pro\/licence.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/wp-migrate-db-pro\/template\/pro\/licence.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/assets\/plugins\/wp-migrate-db-pro\/template\/pro\/outdated-addons-warning.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/wp-migrate-db-pro\/template\/pro\/outdated-addons-warning.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/assets\/plugins\/wp-migrate-db-pro\/template\/pro\/pull-push-radio-buttons.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/wp-migrate-db-pro\/template\/pro\/pull-push-radio-buttons.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/assets\/plugins\/wp-migrate-db-pro\/template\/pro\/select-tables.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/wp-migrate-db-pro\/template\/pro\/select-tables.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/assets\/plugins\/wp-migrate-db-pro\/template\/pro\/toggle-remote-requests.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/wp-migrate-db-pro\/template\/pro\/toggle-remote-requests.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/assets\/plugins\/wp-migrate-db-pro\/template\/pro\/videos.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/wp-migrate-db-pro\/template\/pro\/videos.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -18751,6 +19252,81 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/assets\/plugins\/zigwidgetclass\/assets\/banner-772x250.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 60136,
+		"inputAbbreviatedPath": "\/assets\/plugins\/zigwidgetclass\/assets\/banner-772x250.jpg",
+		"outputAbbreviatedPath": "\/assets\/plugins\/zigwidgetclass\/assets\/banner-772x250.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/plugins\/zigwidgetclass\/css\/admin.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/zigwidgetclass\/css\/admin.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/assets\/plugins\/zigwidgetclass\/images\/cog.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 512,
+		"inputAbbreviatedPath": "\/assets\/plugins\/zigwidgetclass\/images\/cog.png",
+		"outputAbbreviatedPath": "\/assets\/plugins\/zigwidgetclass\/images\/cog.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/plugins\/zigwidgetclass\/images\/facebook.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 502,
+		"inputAbbreviatedPath": "\/assets\/plugins\/zigwidgetclass\/images\/facebook.png",
+		"outputAbbreviatedPath": "\/assets\/plugins\/zigwidgetclass\/images\/facebook.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/plugins\/zigwidgetclass\/images\/icon-16x16-zp.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 486,
+		"inputAbbreviatedPath": "\/assets\/plugins\/zigwidgetclass\/images\/icon-16x16-zp.png",
+		"outputAbbreviatedPath": "\/assets\/plugins\/zigwidgetclass\/images\/icon-16x16-zp.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/plugins\/zigwidgetclass\/images\/plugin.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 591,
+		"inputAbbreviatedPath": "\/assets\/plugins\/zigwidgetclass\/images\/plugin.png",
+		"outputAbbreviatedPath": "\/assets\/plugins\/zigwidgetclass\/images\/plugin.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/plugins\/zigwidgetclass\/images\/twitter.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 608,
+		"inputAbbreviatedPath": "\/assets\/plugins\/zigwidgetclass\/images\/twitter.png",
+		"outputAbbreviatedPath": "\/assets\/plugins\/zigwidgetclass\/images\/twitter.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/assets\/plugins\/zigwidgetclass\/zigwidgetclass.php": {
 		"fileType": 8192,
@@ -19419,6 +19995,18 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/themes\/genesis\/page_blog.php",
 		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/assets\/themes\/genesis\/README.md": {
+		"enableFootnoteSupport": 0,
+		"enableSmartyPants": 1,
+		"expandTabs": 1,
+		"fileType": 4096,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/themes\/genesis\/README.md",
+		"outputAbbreviatedPath": "\/assets\/themes\/genesis\/README.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
@@ -21298,6 +21886,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/assets\/themes\/msd-genesis-child\/lib\/js\/min\/theme-jquery-ck.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/themes\/msd-genesis-child\/lib\/js\/min\/theme-jquery-ck.js",
+		"outputAbbreviatedPath": "\/assets\/themes\/msd-genesis-child\/lib\/js\/min\/min\/theme-jquery-ck-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/assets\/themes\/msd-genesis-child\/lib\/js\/modernizr-custom.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -21732,26 +22331,6 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/themes\/msd-genesis-child\/lib\/less\/style.less",
 		"outputAbbreviatedPath": "\/assets\/themes\/msd-genesis-child\/lib\/css\/style.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"relativeURLS": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"strictImports": 0,
-		"strictMath": 0,
-		"strictUnits": 0
-		},
-	"\/assets\/themes\/msd-genesis-child\/lib\/less\/version1.8.0.less": {
-		"allowInsecureImports": 0,
-		"createSourceMap": 0,
-		"disableJavascript": 0,
-		"fileType": 1,
-		"ieCompatibility": 1,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/themes\/msd-genesis-child\/lib\/less\/version1.8.0.less",
-		"outputAbbreviatedPath": "\/assets\/themes\/msd-genesis-child\/lib\/css\/version1.8.0.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -24572,6 +25151,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/wp-admin\/includes\/translation-install.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-admin\/includes\/translation-install.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/wp-admin\/includes\/update-core.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -24853,6 +25441,28 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/wp-admin\/js\/editor-expand.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-admin\/js\/editor-expand.js",
+		"outputAbbreviatedPath": "\/wp-admin\/js\/min\/editor-expand-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/wp-admin\/js\/editor-expand.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-admin\/js\/editor-expand.min.js",
+		"outputAbbreviatedPath": "\/wp-admin\/js\/min\/editor-expand.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/wp-admin\/js\/editor.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -24980,6 +25590,28 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/wp-admin\/js\/iris.min.js",
 		"outputAbbreviatedPath": "\/wp-admin\/js\/min\/iris.min-ck.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/wp-admin\/js\/language-chooser.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-admin\/js\/language-chooser.js",
+		"outputAbbreviatedPath": "\/wp-admin\/js\/min\/language-chooser-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/wp-admin\/js\/language-chooser.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-admin\/js\/language-chooser.min.js",
+		"outputAbbreviatedPath": "\/wp-admin\/js\/min\/language-chooser.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -26550,6 +27182,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/wp-includes\/class-wp-customize-manager.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/wp-includes\/class-wp-customize-panel.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-includes\/class-wp-customize-panel.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -28710,6 +29351,28 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/wp-includes\/js\/media-grid.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-includes\/js\/media-grid.js",
+		"outputAbbreviatedPath": "\/wp-includes\/js\/min\/media-grid-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/wp-includes\/js\/media-grid.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-includes\/js\/media-grid.min.js",
+		"outputAbbreviatedPath": "\/wp-includes\/js\/min\/media-grid.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/wp-includes\/js\/media-models.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -29089,6 +29752,28 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/wp-includes\/js\/tinymce\/plugins\/colorpicker\/plugin.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-includes\/js\/tinymce\/plugins\/colorpicker\/plugin.js",
+		"outputAbbreviatedPath": "\/wp-includes\/js\/tinymce\/plugins\/colorpicker\/min\/plugin-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/wp-includes\/js\/tinymce\/plugins\/colorpicker\/plugin.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-includes\/js\/tinymce\/plugins\/colorpicker\/plugin.min.js",
+		"outputAbbreviatedPath": "\/wp-includes\/js\/tinymce\/plugins\/colorpicker\/min\/plugin.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/wp-includes\/js\/tinymce\/plugins\/compat3x\/css\/dialog.css": {
 		"fileType": 16,
 		"ignore": 0,
@@ -29208,6 +29893,28 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/wp-includes\/js\/tinymce\/plugins\/lists\/plugin.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-includes\/js\/tinymce\/plugins\/lists\/plugin.js",
+		"outputAbbreviatedPath": "\/wp-includes\/js\/tinymce\/plugins\/lists\/min\/plugin-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/wp-includes\/js\/tinymce\/plugins\/lists\/plugin.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-includes\/js\/tinymce\/plugins\/lists\/plugin.min.js",
+		"outputAbbreviatedPath": "\/wp-includes\/js\/tinymce\/plugins\/lists\/min\/plugin.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/wp-includes\/js\/tinymce\/plugins\/media\/plugin.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -29313,6 +30020,28 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/wp-includes\/js\/tinymce\/plugins\/wordpress\/plugin.min.js",
 		"outputAbbreviatedPath": "\/wp-includes\/js\/tinymce\/plugins\/wordpress\/min\/plugin.min-ck.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/wp-includes\/js\/tinymce\/plugins\/wpautoresize\/plugin.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-includes\/js\/tinymce\/plugins\/wpautoresize\/plugin.js",
+		"outputAbbreviatedPath": "\/wp-includes\/js\/tinymce\/plugins\/wpautoresize\/min\/plugin-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/wp-includes\/js\/tinymce\/plugins\/wpautoresize\/plugin.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-includes\/js\/tinymce\/plugins\/wpautoresize\/plugin.min.js",
+		"outputAbbreviatedPath": "\/wp-includes\/js\/tinymce\/plugins\/wpautoresize\/min\/plugin.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -30393,6 +31122,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/wp-includes\/session.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-includes\/session.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/wp-includes\/shortcodes.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -31149,6 +31887,10 @@
 			"active": 0,
 			"flagValue": -1
 			},
+		"prefer_english_operator": {
+			"active": 0,
+			"flagValue": -1
+			},
 		"space_operators": {
 			"active": 0,
 			"flagValue": -1
@@ -31624,6 +32366,7 @@
 	"stylusAutoOutputPathReplace1": "stylus",
 	"stylusAutoOutputPathReplace2": "css",
 	"stylusAutoOutputPathStyle": 2,
+	"stylusCreateSourceMap": 0,
 	"stylusDebugStyle": 0,
 	"stylusImportCSS": 0,
 	"stylusOutputStyle": 0,
