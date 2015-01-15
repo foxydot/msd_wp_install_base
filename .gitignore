@@ -49,6 +49,9 @@ wp-content/themes/genesis
 .AppleDouble
 .LSOverride
 Icon
+*.zip
+*.tar.gz
+*.tar.bz
 
 
 # Thumbnails
